@@ -4,16 +4,15 @@
 #include <iostream>
 using namespace std;
 
-//zadanie 1
-
 int main()
 {
-    int a, b;
+    /*int a, b;
     cout << "Wprowadz a: ";
     cin >> a;
     cout << "\nWprowadz b: ";
     cin >> b;
 
+    //zadanie 1
     if (a == b) {
         cout << "\nLiczby sa rowne";
     }
@@ -22,6 +21,175 @@ int main()
     }
     else {
         cout << "\nLiczba a jest wieksza od b";
+    }
+
+    //zadanie 2
+    cout << "\nZadanie 2";
+
+    if (a == b) {
+        cout << "\nLiczby sa rowne";
+    }
+    
+    if (a != b) {
+        if (a < b) {
+            cout << "\nLiczba a jest mniejsza od b";
+        }
+        else {
+            cout << "\nLiczba a jest wieksza od b";
+        }
+    }
+
+    //zadanie 3
+    cout << "\nZadanie 3";
+    float r;
+    cout << "\nWprowadz wspolczynnik r: ";
+    cin >> r;
+
+    if (r >= 0.7 && r <= 1) {
+        cout << "\nbardzo silna korelacja dodatnia" << endl;
+    }
+    else if (r >= 0.5) {
+        cout << "\nsilna korelacja dodatnia" << endl;
+    }
+    else if (r >= 0.3) {
+        cout << "\numiarkowana korelacja dodatnia" << endl;
+    }
+    else if (r >= 0.2) {
+        cout << "\nslaba korelacja dodatnia" << endl;
+    }
+    else {
+        cout << "\nbrak korelacji" << endl;
+    }
+
+    //zadanie 4
+    cout << "\nZadanie 4";
+
+    float x, y, wyn;
+    char znak;
+    cout << "\nPodaj liczbe x: ";
+    cin >> x;
+    cout << "\nPodaj liczbe y: ";
+    cin >> y;
+
+    cout << "\nPodaj znak dla pozadanego dzialania: ";
+    cin >> znak;
+
+    cout << endl;
+
+    switch (znak) {
+    case '+':
+        wyn = x + y;
+        cout << x << " + " << y << " = " << wyn << endl;
+        break;
+    case '-':
+        wyn = x - y;
+        cout << x << " - " << y << " = " << wyn << endl;
+        break;
+    case '*':
+        wyn = x * y;
+        cout << x << " * " << y << " = " << wyn << endl;
+        break;
+    case '/':
+        if (x != 0 && y != 0) {
+            wyn = x / y;
+            cout << x << " / " << y << " = " << wyn << endl;
+            break;
+        }
+        else {
+            cout << "nie mozna dzielic przez 0" << endl;
+            break;
+        }
+    default:
+        cout << "Wprowadzono niepoprawny znak" << endl;
+        break;
+    }
+    
+    //Zadanie 5
+    cout << "\nZadanie 5";
+    
+    int i;
+    i = 0;
+    while (true) {
+        cout << i << endl;
+        i++;
+    }
+
+    bool zmienna_logiczna = true;
+    if (zmienna_logiczna) {
+        cout << "PRAWDA" << endl;
+    }
+    else {
+        cout << "FALSZ" << endl;
+    }
+
+    //Zadanie 6
+    cout << "Zadanie 6" << endl;
+
+    int koniec = 1;
+    while (koniec) {
+        float x, y, wyn;
+        char znak;
+        cout << "\nPodaj liczbe x: ";
+        cin >> x;
+        cout << "\nPodaj liczbe y: ";
+        cin >> y;
+
+        cout << "\nPodaj znak dla pozadanego dzialania: ";
+        cin >> znak;
+
+        cout << endl;
+
+        switch (znak) {
+        case '+':
+            wyn = x + y;
+            cout << x << " + " << y << " = " << wyn << endl;
+            break;
+        case '-':
+            wyn = x - y;
+            cout << x << " - " << y << " = " << wyn << endl;
+            break;
+        case '*':
+            wyn = x * y;
+            cout << x << " * " << y << " = " << wyn << endl;
+            break;
+        case '/':
+            if (x != 0 && y != 0) {
+                wyn = x / y;
+                cout << x << " / " << y << " = " << wyn << endl;
+                break;
+            }
+            else {
+                cout << "nie mozna dzielic przez 0" << endl;
+                break;
+            }
+        default:
+            cout << "Wprowadzono niepoprawny znak" << endl;
+            break;
+        }
+
+        cout << "Zakonczyc program? Wpisz 0 zeby zakonczyc: ";
+        cin >> koniec;
+
+        if (koniec==0) {
+            return 0;
+        }
+    }*/
+
+    //zadanie 7
+    cout << "\nZadanie 7" << endl;
+    int l;
+    l = 0;
+
+    while (1) {
+        if (l == 200) {
+            break;
+        }
+        else {
+            if (l % 2 != 0) {
+                cout << l << endl;
+            }
+        }
+        l++;
     }
 }
 
