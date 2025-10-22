@@ -2,10 +2,27 @@
 //
 
 #include <iostream>
+using namespace std;
+
+//zadanie 1
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int a, b;
+    cout << "Wprowadz a: ";
+    cin >> a;
+    cout << "\nWprowadz b: ";
+    cin >> b;
+
+    if (a == b) {
+        cout << "\nLiczby sa rowne";
+    }
+    else if (a < b) {
+        cout << "\nLiczba a jest mniejsza od b";
+    }
+    else {
+        cout << "\nLiczba a jest wieksza od b";
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
