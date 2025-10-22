@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main()
@@ -173,7 +174,7 @@ int main()
         if (koniec==0) {
             return 0;
         }
-    }*/
+    }
 
     //zadanie 7
     cout << "\nZadanie 7" << endl;
@@ -190,7 +191,33 @@ int main()
             }
         }
         l++;
+    }*/
+
+    //zadanie 8
+    cout << "Zadanie 8" << endl;
+
+    int n, dzielnik;
+    do {
+        cout << "Wprowadz liczbe naturalna dodatnia: ";
+        cin >> n;
+    } while (n < 1);
+
+    int licz = 0, dz = 0;
+    
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) {
+            dz = i;
+            licz++;
+            break;
+        }
     }
+    if (licz != 0) {
+        cout << "Pierwszy dzielnik liczby " << n << " z przedzialu [2,"<<sqrt(n)<<"] to " << dz << endl;
+    }
+    else {
+        cout << "Liczba " << n << " jest liczba pierwsza" << endl;
+    }
+            
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
